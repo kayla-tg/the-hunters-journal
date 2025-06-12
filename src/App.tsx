@@ -1,15 +1,16 @@
 import React, { useState} from "react"
-import { Nav } from "./Nav"
+import { Header } from "./components/Header"
+import { Home } from "./components/Home"
 
 function App() {
-  const [page, setPage] = useState("journal")
+  const [page, setPage] = useState("home")
 
   let Component
-  // if (page === "journal") Component = <Journal />
+  if (page === "home") Component = <Home/>
 
   return (
     <>
-    <Nav setPage={setPage} />
+    <Header setPage={setPage} />
     {Component}
     </>
   )
