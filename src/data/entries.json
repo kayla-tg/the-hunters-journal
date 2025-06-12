@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "author": "Sample Author",
+        "date": "Sample Date",
+        "image": "",
+        "title": "./public/logo192.png",
+        "body": "Sample body"
+    },
+    {
+        "id": 1,
+        "author": "Sample Author",
+        "date": "Sample Date",
+        "image": "",
+        "title": "./public/logo192.png",
+        "body": "Sample body"
+    },
+    {
+        "id": 2,
+        "author": "Sample Author",
+        "date": "Sample Date",
+        "image": "",
+        "title": "./public/logo192.png",
+        "body": "Sample body"
+    }
+]

@@ -3,7 +3,7 @@ import {createContext, ReactNode, useEffect, useState} from "react"
 export interface Entry {
     id: number,
     author: string,
-    date: Date, 
+    date: string, 
     image: string,
     title: string, 
     body: string
