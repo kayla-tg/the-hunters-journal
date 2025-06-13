@@ -28,17 +28,16 @@ export const EntriesProvider: React.FC<{children:ReactNode}> = ({children}) => {
 
     useEffect(() => {
         const getEntries = async () => {
-            const url = ''
             try {
-                const response = await fetch(url)
+                const response = await fetch('./data/entries.json') 
                 if (!response.ok) {
                     throw new Error("Network request failed")
                 }
-                const json = await response.json() as Entry[]
-                setEntries(json)
+                const data = await response.json() as Entry[]
+                setEntries(data)
                 setLoading(false)
                 setError(null)
-                console.log(json)
+                console.log(data)
             }
             catch (err) {
                 let message: string
