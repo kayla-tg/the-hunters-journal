@@ -29,7 +29,7 @@ export const EntriesProvider: React.FC<{children:ReactNode}> = ({children}) => {
     useEffect(() => {
         const getEntries = async () => {
             try {
-                const response = await fetch('./data/entries.json') 
+                const response = await fetch('/data/entries.json') 
                 if (!response.ok) {
                     throw new Error("Network request failed")
                 }
